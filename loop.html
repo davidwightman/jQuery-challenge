@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+
+<div></div>
+
+<script>
+function appendChildren() {
+  //var allDivs = document.getElementsByTagName("div");
+
+$('div').each(function(){
+	decorateDiv(this)
+	$(this).append($('<div>'))
+})
+
+//   for (var i = 0; i < allDivs.length; i++) {
+//     var newDiv = document.createElement("div");
+//     decorateDiv(newDiv);
+//     allDivs[i].appendChild(newDiv);
+
+//     debugger;
+    
+//   }
+ }
+
+// Mock of decorateDiv function for testing purposes
+function decorateDiv(div) {}
+</script>
+</body>
+</html>
